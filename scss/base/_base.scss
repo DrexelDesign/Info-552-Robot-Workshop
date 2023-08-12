@@ -9,3 +9,16 @@ ul{
         list-style: none;
     }
 }
+
+.hide-md{
+    @include md{
+        display: none !important;
+    }
+}
+
+.show-md{
+    display: none !important;
+    @include md{
+        display: block !important;
+    }
+}

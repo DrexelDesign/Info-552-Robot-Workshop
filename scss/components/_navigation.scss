@@ -5,3 +5,49 @@
 a:link, a:visited{
     text-decoration: none;
 }
+
+#main-nav{
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        @include md{
+            justify-content: flex-start;
+        }
+
+        li{
+            @include md{
+                padding-right: 16px;
+                padding-left: 16px;
+                border-right: 2px solid var(--charcoal);
+            }
+
+            @include lg{
+                padding-right: 24px;
+                padding-left: 24px;
+            }
+
+            a:link, a:visited{
+                font-family: 'Roboto Slab', serif;
+                color: var(--white);
+                font-size: rem-calc(18);
+                font-weight: 700;
+                transition: 0.25s;
+
+                @include md{
+                    color: var(--charcoal);
+                }
+                &:hover, &:active{
+                    color: var(--yellow);
+                }
+            }
+        }
+
+        li:first-child{
+            padding-left: 0;
+        }
+
+        li:last-child{
+            border: none;
+        }
+    }
+}

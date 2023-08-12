@@ -341,6 +341,21 @@ ul li {
   list-style: none;
 }
 
+@media (min-width: 768px) {
+  .hide-md {
+    display: none !important;
+  }
+}
+
+.show-md {
+  display: none !important;
+}
+@media (min-width: 768px) {
+  .show-md {
+    display: block !important;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -356,6 +371,14 @@ h1, h2, h3, h4 {
 /* =============
     Buttons
 ============= */
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+
 /* =============
     Forms
 ============= */
@@ -383,9 +406,207 @@ a:link, a:visited {
   text-decoration: none;
 }
 
+#main-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+@media (min-width: 768px) {
+  #main-nav ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+@media (min-width: 768px) {
+  #main-nav ul li {
+    padding-right: 16px;
+    padding-left: 16px;
+    border-right: 2px solid var(--charcoal);
+  }
+}
+@media (min-width: 1024px) {
+  #main-nav ul li {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+#main-nav ul li a:link, #main-nav ul li a:visited {
+  font-family: "Roboto Slab", serif;
+  color: var(--white);
+  font-size: 1.125rem;
+  font-weight: 700;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+@media (min-width: 768px) {
+  #main-nav ul li a:link, #main-nav ul li a:visited {
+    color: var(--charcoal);
+  }
+}
+#main-nav ul li a:link:hover, #main-nav ul li a:link:active, #main-nav ul li a:visited:hover, #main-nav ul li a:visited:active {
+  color: var(--yellow);
+}
+#main-nav ul li:first-child {
+  padding-left: 0;
+}
+#main-nav ul li:last-child {
+  border: none;
+}
+
 /* =============
     Header
 ============= */
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". header .";
+  padding: 8px 0;
+}
+@media (min-width: 768px) {
+  header {
+    padding: 24px 0;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    -ms-grid-columns: auto 1200px auto;
+    grid-template-columns: auto 1200px auto;
+  }
+}
+header > div {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: header;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "burger logo guide" "nav nav nav";
+}
+@media (min-width: 768px) {
+  header > div {
+        grid-template-areas: ". logo ." "nav nav guide";
+  }
+}
+header > div #logo-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: logo;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header > div #burger-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: burger;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header > div #burger-container button {
+  background-color: transparent;
+  color: var(--black);
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.25rem;
+}
+header > div #nav-container {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: nav;
+  background-color: var(--charcoal);
+  padding: 24px 0;
+  margin-top: 8px;
+}
+@media (min-width: 768px) {
+  header > div #nav-container {
+    background-color: var(--white);
+  }
+}
+header > div #guide-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: guide;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+@media (min-width: 768px) {
+  header > div #logo-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  header > div #nav-container {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  header > div #guide-container {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
+}
+@media (min-width: 768px) {
+  header > div #guide-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+header > div #guide-container #guide-book-btn {
+  background-color: var(--yellow);
+  color: var(--black);
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.25rem;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+header > div #guide-container #guide-book-btn:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+header > div #guide-container #guide-text-btn {
+  display: block;
+  background-color: var(--yellow);
+  border-radius: 23px;
+  padding: 12px 20px;
+  color: var(--black);
+  font-size: 1.125rem;
+  font-weight: 600;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+header > div #guide-container #guide-text-btn:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
 /* =============
     Footer
 ============= */
