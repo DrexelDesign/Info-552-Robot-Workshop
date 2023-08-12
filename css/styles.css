@@ -647,3 +647,23 @@ footer ul li a:link, footer ul li a:visited {
 footer ul li a:link:hover, footer ul li a:link:active, footer ul li a:visited:hover, footer ul li a:visited:active {
   color: var(--white);
 }
+
+.heroes {
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 1200px) {
+  .heroes {
+    height: 80vh;
+  }
+}
+
+#hero {
+  background-image: url("../img/hero/hero.jpg");
+}
+
+#hero-2 {
+  background-image: url("../img/hero-2/hero.jpg");
+  background-position: 70% center;
+}
