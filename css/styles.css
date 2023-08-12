@@ -467,6 +467,11 @@ header {
   grid-template-columns: 16px auto 16px;
       grid-template-areas: ". header .";
   padding: 8px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
 }
 @media (min-width: 768px) {
   header {
@@ -661,6 +666,22 @@ footer ul li a:link:hover, footer ul li a:link:active, footer ul li a:visited:ho
 
 #hero {
   background-image: url("../img/hero/hero.jpg");
+  margin-top: 100px;
+}
+@media (min-width: 768px) {
+  #hero {
+    margin-top: 120px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero {
+    margin-top: 150px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero {
+    margin-top: 160px;
+  }
 }
 
 #hero-2 {

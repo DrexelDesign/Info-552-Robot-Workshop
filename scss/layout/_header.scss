@@ -6,6 +6,11 @@ header{
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". header .";
     padding: 8px 0;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    background-color: var(--white);
 
     @include md{
         padding: 24px 0;
