@@ -333,14 +333,6 @@ template {
 /* =============
     Base
 ============= */
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  min-height: 100vh;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -715,7 +707,6 @@ footer ul li a:link:hover, footer ul li a:link:active, footer ul li a:visited:ho
     History
 ============= */
 #history {
-  scroll-margin-top: 100px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 16px auto 16px;
