@@ -370,6 +370,15 @@ ul li {
   }
 }
 
+.show-xl {
+  display: none !important;
+}
+@media (min-width: 1200px) {
+  .show-xl {
+    display: block !important;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -898,4 +907,176 @@ footer ul li a:link:hover, footer ul li a:link:active, footer ul li a:visited:ho
 }
 #skills > div #skills-content #skills-bottom #math .yellow-bar {
   width: 95%;
+}
+
+/* =============
+    Gallery 
+============= */
+#gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". gallery .";
+}
+@media (min-width: 1200px) {
+  #gallery {
+    -ms-grid-columns: auto 1200px auto;
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#gallery > div {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: gallery;
+}
+#gallery > div ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 40vh 24px 40vh 24px 40vh 24px 40vh 24px 40vh;
+  grid-template-rows: repeat(5, 40vh);
+  gap: 24px;
+      grid-template-areas: "g7" "g1" "g1" "g6" "g3";
+}
+@media (min-width: 768px) {
+  #gallery > div ul {
+    -ms-grid-rows: (30vh)[3];
+    grid-template-rows: repeat(3, 30vh);
+    -ms-grid-columns: 50% auto;
+    grid-template-columns: 50% auto;
+        grid-template-areas: "g1 g3" "g1 g7" "g5 g6";
+  }
+}
+@media (min-width: 1200px) {
+  #gallery > div ul {
+        grid-template-areas: "g1 g2 g3" "g1 g7 g4" "g6 g5 g4";
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (25vh)[3];
+    grid-template-rows: repeat(3, 25vh);
+  }
+}
+#gallery > div ul li {
+  color: var(--yellow);
+  font-family: "Pacifico", cursive;
+  font-size: 2.6875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  #gallery > div ul li {
+    font-size: 2.875rem;
+  }
+}
+#gallery > div ul #g1 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  background-image: url("../img/gallery/gallery-1.jpg");
+  grid-area: g1;
+}
+#gallery > div ul #g2 {
+  background-image: url("../img/gallery/gallery-2.jpg");
+}
+@media (min-width: 1200px) {
+  #gallery > div ul #g2 {
+    grid-area: g2;
+  }
+}
+#gallery > div ul #g3 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  background-image: url("../img/gallery/gallery-3.jpg");
+  grid-area: g3;
+}
+#gallery > div ul #g4 {
+  background-image: url("../img/gallery/gallery-4.jpg");
+}
+@media (min-width: 1200px) {
+  #gallery > div ul #g4 {
+    grid-area: g4;
+  }
+}
+#gallery > div ul #g5 {
+  background-image: url("../img/gallery/gallery-5.jpg");
+}
+@media (min-width: 768px) {
+  #gallery > div ul #g5 {
+    grid-area: g5;
+  }
+}
+#gallery > div ul #g6 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  background-image: url("../img/gallery/gallery-6.jpg");
+  grid-area: g6;
+}
+#gallery > div ul #g7 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: g7;
+}
+@media (min-width: 768px) {
+  #gallery > div ul #g1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+  #gallery > div ul #g3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  #gallery > div ul #g5 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  #gallery > div ul #g6 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+  #gallery > div ul #g7 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+}
+@media (min-width: 1200px) {
+  #gallery > div ul #g1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+  #gallery > div ul #g2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  #gallery > div ul #g3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  #gallery > div ul #g4 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+  }
+  #gallery > div ul #g5 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+  #gallery > div ul #g6 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  #gallery > div ul #g7 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
 }

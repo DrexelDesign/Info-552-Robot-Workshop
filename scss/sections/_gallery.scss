@@ -1,0 +1,102 @@
+/* =============
+    Gallery 
+============= */
+#gallery{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". gallery .";
+
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
+
+    >div{
+        grid-area: gallery;
+
+        ul{
+            display: grid;
+            grid-template-rows: repeat(5, 40vh);
+            gap: 24px;
+            grid-template-areas: 
+            "g7"
+            "g1"
+            "g1"
+            "g6"
+            "g3";
+
+            @include md{
+                grid-template-rows: repeat(3, 30vh);
+                grid-template-columns: 50% auto;
+                grid-template-areas: 
+                "g1 g3"
+                "g1 g7"
+                "g5 g6";
+            }
+
+            @include xl{
+                grid-template-areas: 
+                "g1 g2 g3"
+                "g1 g7 g4"
+                "g6 g5 g4";
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 25vh);
+            }
+
+            li{
+                color: var(--yellow);
+                font-family: 'Pacifico', cursive;
+                font-size: rem-calc(43);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-size: cover;
+                background-position: center;
+
+                @include md{
+                    font-size: rem-calc(46);
+                }
+            }
+
+            #g1{
+                background-image: url("../img/gallery/gallery-1.jpg");
+                grid-area: g1;
+            }
+
+            #g2{
+                background-image: url("../img/gallery/gallery-2.jpg");
+                @include xl{
+                    grid-area: g2;
+                }
+            }
+
+            #g3{
+                background-image: url("../img/gallery/gallery-3.jpg");
+                grid-area: g3;
+            }
+
+            #g4{
+                background-image: url("../img/gallery/gallery-4.jpg");
+                @include xl{
+                    grid-area: g4;
+                }
+            }
+
+            #g5{
+                background-image: url("../img/gallery/gallery-5.jpg");
+                @include md{
+                    grid-area: g5;
+                }
+                
+            }
+
+            #g6{
+                background-image: url("../img/gallery/gallery-6.jpg");
+                grid-area: g6;
+            }
+
+            #g7{
+                grid-area: g7;
+            }
+        }
+    }
+}
