@@ -377,7 +377,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p {
   padding: 0;
   margin: 0;
 }
@@ -790,4 +790,112 @@ footer ul li a:link:hover, footer ul li a:link:active, footer ul li a:visited:ho
 }
 #history > div #history-content #history-content-last-p span {
   font-weight: 700;
+}
+
+/* =============
+    Skills 
+============= */
+#skills {
+  background-color: var(--charcoal);
+  color: var(--white);
+}
+@media (min-width: 1200px) {
+  #skills {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 1200px auto;
+    grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". skills .";
+  }
+}
+@media (min-width: 1200px) {
+  #skills > div {
+    grid-area: skills;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% auto;
+    grid-template-columns: 40% auto;
+  }
+}
+@media (min-width: 1200px) {
+  #skills > div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+}
+#skills > div aside {
+  background-image: url("../img/skills/robot.jpg");
+  height: 50vh;
+  background-size: cover;
+  background-position: 40% center;
+}
+@media (min-width: 1200px) {
+  #skills > div aside {
+    height: 40vh;
+    background-position: 70% center;
+  }
+}
+#skills > div #skills-content {
+  padding: 60px 16px;
+}
+@media (min-width: 768px) {
+  #skills > div #skills-content {
+    padding: 24px 10vw;
+  }
+}
+@media (min-width: 1200px) {
+  #skills > div #skills-content {
+    padding: 24px 5vw;
+  }
+}
+#skills > div #skills-content h1 {
+  font-family: "Comfortaa", cursive;
+  font-size: 1.3125rem;
+}
+#skills > div #skills-content p {
+  line-height: 1.375rem;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  #skills > div #skills-content p {
+    font-size: 1.125rem;
+  }
+}
+#skills > div #skills-content #skills-bottom {
+  margin-top: 40px;
+}
+#skills > div #skills-content #skills-bottom .yellow-bars {
+  margin-top: 48px;
+}
+#skills > div #skills-content #skills-bottom .yellow-bars > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8px;
+}
+#skills > div #skills-content #skills-bottom .yellow-bars > div h3 {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+#skills > div #skills-content #skills-bottom .yellow-bars > div h4 {
+  font-size: 1.125rem;
+  margin-left: auto;
+}
+#skills > div #skills-content #skills-bottom .yellow-bars .black-bar {
+  width: 100%;
+  height: 10px;
+  background-color: var(--black);
+}
+#skills > div #skills-content #skills-bottom .yellow-bar {
+  height: 10px;
+  background-color: var(--yellow);
+}
+#skills > div #skills-content #skills-bottom #emotion .yellow-bar {
+  width: 62%;
+}
+#skills > div #skills-content #skills-bottom #learning .yellow-bar {
+  width: 90%;
+}
+#skills > div #skills-content #skills-bottom #math .yellow-bar {
+  width: 95%;
 }
