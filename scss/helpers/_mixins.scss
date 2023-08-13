@@ -157,3 +157,12 @@ html {
         @content;
     }
 }
+
+
+// Large size for history content
+@mixin history {
+    @media (min-width: #{$screen-history-min}) {
+        @content;
+    }
+}
+

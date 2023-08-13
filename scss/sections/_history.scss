@@ -1,0 +1,87 @@
+/* =============
+    History
+============= */
+
+#history{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". history .";
+
+    @include history{
+        grid-template-columns: auto 800px auto;
+    }
+
+    >div{
+        grid-area: history;
+
+        #history-hero{
+            background-image: url("../img/history/history.jpg");
+            height: 15vh;
+            width: 15vh;
+            background-size: cover;
+            border-radius: 100%;
+            margin: 0 auto;
+        }
+
+        #history-title{
+            font-family: 'Comfortaa', cursive;
+            color: var(--yellow);
+            text-align: center;
+            margin-top: 40px;
+
+            // h1:first-child{}
+            h1:nth-child(1){
+                font-size: rem-calc(31);
+
+                @include md{
+                    font-size: rem-calc(42);
+                }
+            }
+
+            // h1:last-child{}
+            h1:nth-child(2){
+                font-size: rem-calc(48);
+
+                @include md{
+                    font-size: rem-calc(55);
+                }
+            }
+
+            p{
+                color: var(--black);
+                font-family: 'Open Sans', sans-serif;
+            }
+            
+        }
+
+        #history-content{
+            text-align: justify;
+            font-size: rem-calc(18);
+            font-weight: 600;
+            line-height: rem-calc(22);
+            margin-top: 24px;
+
+            @include md{
+                line-height: rem-calc(26);
+            }
+
+            #history-content-last-p{
+                font-weight: 400;
+                font-size: rem-calc(16);
+                padding-top: 60px;
+
+                @include md{
+                    padding: 140px 10vw 0;
+                }
+
+                @include lg{
+                    padding: 140px 5vw 0;
+                }
+
+                span{
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

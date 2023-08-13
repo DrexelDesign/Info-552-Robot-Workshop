@@ -9,6 +9,18 @@ ul{
     }
 }
 
+.content-spacing{
+    margin-top: 60px;
+
+    @include md{
+        margin-top: 54px;
+    }
+
+    @include xl{
+        margin-top: 96px;
+    }
+}
+
 .hide-md{
     @include md{
         display: none !important;
