@@ -13,11 +13,10 @@ header{
     background-color: var(--white);
 
     @include md{
-        // position: static;
-        padding: 24px 0;
-        // position: sticky;
-        // top: -70px;
-        // align-self: start;
+        position: static;
+        padding: 24px 0 8px;
+        position: sticky;
+        top: -70px;
     }
 
     @include lg{

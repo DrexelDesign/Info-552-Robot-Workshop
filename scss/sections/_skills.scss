@@ -3,6 +3,8 @@
 ============= */
 
 #skills{
+    
+    
     background-color: var(--charcoal);
     color: var(--white);
 
@@ -32,10 +34,15 @@
             }
 
             #skills-content{
+                //   this is the offset magic
+                scroll-margin-top: 135px;
+
                 padding: 60px 16px;
 
                 @include md{
                     padding: 24px 10vw;
+                    //   this is the offset magic
+                scroll-margin-top: 115px;
                 }
 
                 @include xl{

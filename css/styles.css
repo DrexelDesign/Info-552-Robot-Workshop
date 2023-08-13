@@ -333,6 +333,10 @@ template {
 /* =============
     Base
 ============= */
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -498,7 +502,10 @@ header {
 }
 @media (min-width: 768px) {
   header {
-    padding: 24px 0;
+    position: static;
+    padding: 24px 0 8px;
+    position: sticky;
+    top: -70px;
   }
 }
 @media (min-width: 1024px) {
@@ -695,7 +702,24 @@ footer ul li a:link:hover, footer ul li a:link:active, footer ul li a:visited:ho
 }
 
 #hero {
+  scroll-margin-top: 150px;
   background-image: url("../img/hero/hero.jpg");
+  margin-top: 50px;
+}
+@media (min-width: 768px) {
+  #hero {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero {
+    margin-top: 150px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero {
+    margin-top: 160px;
+  }
 }
 
 #hero-2 {
@@ -707,11 +731,17 @@ footer ul li a:link:hover, footer ul li a:link:active, footer ul li a:visited:ho
     History
 ============= */
 #history {
+  scroll-margin-top: 150px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
       grid-template-areas: ". history .";
+}
+@media (min-width: 768px) {
+  #history {
+    scroll-margin-top: 130px;
+  }
 }
 @media (min-width: 800px) {
   #history {
@@ -833,11 +863,13 @@ footer ul li a:link:hover, footer ul li a:link:active, footer ul li a:visited:ho
   }
 }
 #skills > div #skills-content {
+  scroll-margin-top: 135px;
   padding: 60px 16px;
 }
 @media (min-width: 768px) {
   #skills > div #skills-content {
     padding: 24px 10vw;
+    scroll-margin-top: 115px;
   }
 }
 @media (min-width: 1200px) {
@@ -901,11 +933,17 @@ footer ul li a:link:hover, footer ul li a:link:active, footer ul li a:visited:ho
     Gallery 
 ============= */
 #gallery {
+  scroll-margin-top: 150px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
       grid-template-areas: ". gallery .";
+}
+@media (min-width: 768px) {
+  #gallery {
+    scroll-margin-top: 130px;
+  }
 }
 @media (min-width: 1200px) {
   #gallery {

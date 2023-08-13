@@ -2,9 +2,17 @@
     Gallery 
 ============= */
 #gallery{
+    //   this is the offset magic
+    scroll-margin-top: 150px;
+
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". gallery .";
+
+    @include md{
+        //   this is the offset magic
+        scroll-margin-top: 130px;
+    }
 
     @include xl{
         grid-template-columns: auto 1200px auto;

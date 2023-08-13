@@ -5,11 +5,16 @@
 #history{
 
     //   this is the offset magic
-    // scroll-margin-top: 100px;
+    scroll-margin-top: 150px;
 
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". history .";
+
+    @include md{
+        //   this is the offset magic
+        scroll-margin-top: 130px;
+    }
 
     @include history{
         grid-template-columns: auto 800px auto;
