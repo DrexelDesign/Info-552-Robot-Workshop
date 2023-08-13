@@ -1,6 +1,13 @@
 /* =============
     Base
 ============= */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+}
+
 ul{
     margin: 0;
     padding: 0;

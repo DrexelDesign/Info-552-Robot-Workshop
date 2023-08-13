@@ -333,6 +333,14 @@ template {
 /* =============
     Base
 ============= */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -520,6 +528,9 @@ header > div {
 @media (min-width: 768px) {
   header > div {
         grid-template-areas: ". logo ." "nav nav guide";
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 header > div #logo-container {
@@ -579,6 +590,7 @@ header > div #guide-container {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  height: 100%;
 }
 @media (min-width: 768px) {
   header > div #logo-container {
@@ -692,22 +704,6 @@ footer ul li a:link:hover, footer ul li a:link:active, footer ul li a:visited:ho
 
 #hero {
   background-image: url("../img/hero/hero.jpg");
-  margin-top: 100px;
-}
-@media (min-width: 768px) {
-  #hero {
-    margin-top: 120px;
-  }
-}
-@media (min-width: 1024px) {
-  #hero {
-    margin-top: 150px;
-  }
-}
-@media (min-width: 1200px) {
-  #hero {
-    margin-top: 160px;
-  }
 }
 
 #hero-2 {
@@ -719,6 +715,7 @@ footer ul li a:link:hover, footer ul li a:link:active, footer ul li a:visited:ho
     History
 ============= */
 #history {
+  scroll-margin-top: 100px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 16px auto 16px;

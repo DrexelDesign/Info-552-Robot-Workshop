@@ -13,7 +13,11 @@ header{
     background-color: var(--white);
 
     @include md{
+        // position: static;
         padding: 24px 0;
+        // position: sticky;
+        // top: -70px;
+        // align-self: start;
     }
 
     @include lg{
@@ -27,11 +31,13 @@ header{
         grid-template-areas: 
         "burger logo guide"
         "nav nav nav";
+        
 
         @include md{
             grid-template-areas: 
             ". logo ."
             "nav nav guide";
+            align-items: baseline;
         }
 
         #logo-container{
@@ -61,22 +67,21 @@ header{
             background-color: var(--charcoal);
             padding: 24px 0;
             margin-top: 8px;
-
             @include md{
                 background-color: var(--white);
+               
             }
-            // see nav partial for styling
         }
 
         #guide-container{
             grid-area: guide;
             display: flex;
             justify-content: flex-end;
+            height: 100%;
 
             @include md{
                 align-items: center;
             }
-
 
             #guide-book-btn{
                 background-color: var(--yellow);
