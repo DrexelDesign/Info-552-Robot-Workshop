@@ -66,14 +66,6 @@ header{
             background-color: var(--charcoal);
             padding: 24px 0;
             margin-top: 8px;
-
-            display: none;
-
-            @include md{
-                background-color: var(--white);
-                display: block;
-               
-            }
         }
 
         #guide-container{

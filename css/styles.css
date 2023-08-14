@@ -433,10 +433,6 @@ a:link, a:visited {
   text-decoration: none;
 }
 
-.showNavContainer {
-  display: block !important;
-}
-
 #main-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -577,13 +573,6 @@ header > div #nav-container {
   background-color: var(--charcoal);
   padding: 24px 0;
   margin-top: 8px;
-  display: none;
-}
-@media (min-width: 768px) {
-  header > div #nav-container {
-    background-color: var(--white);
-    display: block;
-  }
 }
 header > div #guide-container {
   -ms-grid-row: 1;
