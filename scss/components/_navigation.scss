@@ -6,6 +6,10 @@ a:link, a:visited{
     text-decoration: none;
 }
 
+.showNavContainer{
+    display: block !important;
+}
+
 #main-nav{
     ul{
         display: flex;
