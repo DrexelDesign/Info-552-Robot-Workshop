@@ -1173,3 +1173,35 @@ footer ul li a:link:hover, footer ul li a:link:active, footer ul li a:visited:ho
     -ms-grid-column: 2;
   }
 }
+
+/* =============
+    Video
+============= */
+#video {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". video .";
+}
+@media (min-width: 1024px) {
+  #video {
+    -ms-grid-columns: auto 1200px auto;
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#video .videoWrapper {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: video;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+#video .videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
