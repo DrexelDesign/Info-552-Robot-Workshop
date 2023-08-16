@@ -1,3 +1,10 @@
+Fancybox.bind('[data-fancybox="gallery"]',{
+        Thumbs : {
+          type: "modern"
+        }
+});
+
+
 let burgerBtn = document.querySelector("#burger-btn");
 let navContainer = document.querySelector("#nav-container")
 

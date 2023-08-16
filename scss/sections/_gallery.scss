@@ -60,6 +60,12 @@
                 background-size: cover;
                 background-position: center;
 
+                a:link, a:visited{
+                    height: 100%;
+                    width: 100%;
+                    display: inline-block;
+                }
+
                 @include md{
                     font-size: rem-calc(46);
                 }

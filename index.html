@@ -1,144 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/7ab68a398d.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Open+Sans:wght@400;600;800&family=Pacifico&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Robot Workshop</title>
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script src="https://kit.fontawesome.com/7ab68a398d.js" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Open+Sans:wght@400;600;800&family=Pacifico&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet"/>
 
-<body>
+        <!-- Fancy Apps -->
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 
-    <header>
-        <div>
-            <section id="logo-container">
-               <a href="#hero"><img src="img/header/logo.svg" alt="robot logo"></a> 
-            </section>
-            <section id="burger-container" class="hide-md">
-                <!-- <button id="burger-btn"><i class="fa-solid fa-burger"></i></button> -->
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>Robot Workshop</title>
+	</head>
 
-                <div id="burger-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+	<body>
+		<header>
+			<div>
+				<section id="logo-container">
+					<a href="#hero"
+						><img src="img/header/logo.svg" alt="robot logo"
+					/></a>
+				</section>
+				<section id="burger-container" class="hide-md">
+					<!-- <button id="burger-btn"><i class="fa-solid fa-burger"></i></button> -->
 
-            </section>
-            <section id="nav-container">
-                <nav id="main-nav">
-                    <ul>
-                        <li><a href="#history">History</a></li>
-                        <li><a href="#skills-content">Skills</a></li>
-                        <li><a href="#gallery">Skynet</a></li>
-                    </ul>
-                </nav>
-            </section>
+					<div id="burger-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</section>
+				<section id="nav-container">
+					<nav id="main-nav">
+						<ul>
+							<li><a href="#history">History</a></li>
+							<li><a href="#skills-content">Skills</a></li>
+							<li><a href="#gallery">Skynet</a></li>
+						</ul>
+					</nav>
+				</section>
 
-            <section id="guide-container">
-                <button class="hide-md" id="guide-book-btn"><i class="fa-solid fa-book"></i></button>
-                <button class="show-md" id="guide-text-btn">Survival Guide</button>
-            </section>
-        </div>
-    </header>
+				<section id="guide-container">
+					<button class="hide-md" id="guide-book-btn">
+						<i class="fa-solid fa-book"></i>
+					</button>
+					<button class="show-md" id="guide-text-btn">
+						Survival Guide
+					</button>
+				</section>
+			</div>
+		</header>
 
-    <section id="hero" class="heroes"></section>
+		<section id="hero" class="heroes"></section>
 
-    <section id="history" class="content-spacing">
-        <div>
-            <div id="history-hero"></div>
-            <section id="history-title">
-                <h1>Early History of </h1>
-                <h1>Machine Learning</h1>
-                <p>by Professor Karen Pine</p>
-            </section>
+		<section id="history" class="content-spacing">
+			<div>
+				<div id="history-hero"></div>
+				<section id="history-title">
+					<h1>Early History of</h1>
+					<h1>Machine Learning</h1>
+					<p>by Professor Karen Pine</p>
+				</section>
 
-            <article id="history-content">
-                <p>The first case of neural networks was in 1943, when neurophysiologist Warren McCulloch and mathematician Walter Pitts wrote a paper about neurons, and how they work. They decided to create a model of this using an electrical circuit, and therefore the neural network was born. Another extremely early instance of a neural network came in 1959, when Bernard Widrow and Marcian Hoff created two models of them at Stanford University. The first was called ADELINE, and it could detect binary patterns. For example, in a stream of bits, it could predict what the next one would be. The next generation was called MADELINE, and it could eliminate echo on phone lines, so had a useful real world application. It is still in use today.</p>
+				<article id="history-content">
+					<p>
+						The first case of neural networks was in 1943, when
+						neurophysiologist Warren McCulloch and mathematician
+						Walter Pitts wrote a paper about neurons, and how they
+						work. They decided to create a model of this using an
+						electrical circuit, and therefore the neural network was
+						born. Another extremely early instance of a neural
+						network came in 1959, when Bernard Widrow and Marcian
+						Hoff created two models of them at Stanford University.
+						The first was called ADELINE, and it could detect binary
+						patterns. For example, in a stream of bits, it could
+						predict what the next one would be. The next generation
+						was called MADELINE, and it could eliminate echo on
+						phone lines, so had a useful real world application. It
+						is still in use today.
+					</p>
 
-                <p id="history-content-last-p"><span>1980s and 1990s</span> 1982 was the year in which interest in neural networks started to pick up again, when John Hopfield suggested creating a network which had bidirectional lines, similar to how neurons actually work. Furthermore, in 1982, Japan announced it was focusing on more advanced neural networks, which incentivised American funding into the area, and thus created more research in the area.</p>
-            </article>
+					<p id="history-content-last-p">
+						<span>1980s and 1990s</span> 1982 was the year in which
+						interest in neural networks started to pick up again,
+						when John Hopfield suggested creating a network which
+						had bidirectional lines, similar to how neurons actually
+						work. Furthermore, in 1982, Japan announced it was
+						focusing on more advanced neural networks, which
+						incentivised American funding into the area, and thus
+						created more research in the area.
+					</p>
+				</article>
+			</div>
+		</section>
 
-        </div>
-    </section>
+		<section id="skills" class="content-spacing">
+			<div>
+				<aside></aside>
 
-    <section id="skills" class="content-spacing">
-        <div>
-            <aside></aside>
+				<section id="skills-content">
+					<h1>Robot Skills</h1>
+					<p>
+						To be effective as both specialists and generalists — as
+						well as being both practical and investigative —
+						roboticists need a good set of supporting skills. In
+						this list we've taken 25 career skills and grouped them
+						into 10 essential skills for roboticists.
+					</p>
 
-            <section id="skills-content">
-              <h1>Robot Skills</h1>
-              <p>To be effective as both specialists and generalists — as well as being both practical and investigative — roboticists need a good set of supporting skills. In this list we've taken 25 career skills and grouped them into 10 essential skills for roboticists.</p>
+					<section id="skills-bottom">
+						<section id="emotion" class="yellow-bars">
+							<div>
+								<h3>Emotion</h3>
+								<h4>62%</h4>
+							</div>
+							<div class="black-bar">
+								<div class="yellow-bar"></div>
+							</div>
+						</section>
 
-              <section id="skills-bottom">
-                <section id="emotion" class="yellow-bars">
-                    <div>
-                        <h3>Emotion</h3>
-                        <h4>62%</h4>
-                    </div>
-                    <div class="black-bar"><div class="yellow-bar"></div></div>
-                </section>
+						<section id="learning" class="yellow-bars">
+							<div>
+								<h3>Active Learning</h3>
+								<h4>90%</h4>
+							</div>
+							<div class="black-bar">
+								<div class="yellow-bar"></div>
+							</div>
+						</section>
 
-                <section id="learning" class="yellow-bars">
-                    <div>
-                        <h3>Active Learning</h3>
-                        <h4>90%</h4>
-                    </div>
-                    <div class="black-bar"><div class="yellow-bar"></div></div>
-                </section>
+						<section id="math" class="yellow-bars">
+							<div>
+								<h3>Math</h3>
+								<h4>95%</h4>
+							</div>
+							<div class="black-bar">
+								<div class="yellow-bar"></div>
+							</div>
+						</section>
+					</section>
+				</section>
+			</div>
+		</section>
 
-                <section id="math" class="yellow-bars">
-                    <div>
-                        <h3>Math</h3>
-                        <h4>95%</h4>
-                    </div>
-                    <div class="black-bar"><div class="yellow-bar"></div></div>
-                </section>
-              </section>
-            </section>
-        </div>
-    </section>
+		<section id="video" class="content-spacing">
+			<div class="videoWrapper">
+				<iframe
+					width="560"
+					height="315"
+					src="https://www.youtube.com/embed/U44BkNmtzzM"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen
+				></iframe>
+			</div>
+		</section>
 
-    <section id="video" class="content-spacing">
-        <div class="videoWrapper">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/U44BkNmtzzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-    </section>
+		<section id="hero-2" class="heroes content-spacing"></section>
 
-    <section id="hero-2" class="heroes content-spacing"></section>
+		<section id="gallery" class="content-spacing">
+			<div>
+				<ul>
+					<li id="g1"><a href="img/gallery/gallery-1.jpg" data-fancybox="gallery"></a>
+                    </li>
+					<li id="g2" class="show-xl"><a href="img/gallery/gallery-2.jpg" data-fancybox="gallery"></a></li>
+					<li id="g3"><a href="img/gallery/gallery-3.jpg" data-fancybox="gallery"></a></li>
+					<li id="g4" class="show-xl"><a href="img/gallery/gallery-4.jpg" data-fancybox="gallery"></a></li>
+					<li id="g5" class="show-md"><a href="img/gallery/gallery-5.jpg" data-fancybox="gallery"></a></li>
+					<li id="g6"><a href="img/gallery/gallery-6.jpg" data-fancybox="gallery"></a></li>
+					<li id="g7">Skynet</li>
+				</ul>
+			</div>
+		</section>
 
-    <section id="gallery" class="content-spacing">
-        <div>
-            <ul>
-                <li id="g1"></li>
-                <li id="g2" class="show-xl"></li>
-                <li id="g3"></li>
-                <li id="g4" class="show-xl"></li>
-                <li id="g5" class="show-md"></li>
-                <li id="g6"></li>
-                <li id="g7">Skynet</li>
-            </ul>
-        </div>
-    </section>
-    
+		<footer class="content-spacing">
+			<h1><span>SUBSCRIBE</span> TO GET IN TOUCH</h1>
+			<ul>
+				<li>
+					<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa-brands fa-instagram"></i></a>
+				</li>
+			</ul>
+		</footer>
 
-    <footer class="content-spacing">
-        <h1><span>SUBSCRIBE</span> TO GET IN TOUCH</h1>
-        <ul>
-            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-        </ul>
-    </footer>
-
-
-    <script src="js/scripts-dist.js"></script>
-    
-</body>
-
+		<script src="js/scripts-dist.js"></script>
+	</body>
 </html>
