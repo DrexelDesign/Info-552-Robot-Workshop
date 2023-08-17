@@ -1179,6 +1179,10 @@ footer ul li a:link:hover, footer ul li a:link:active, footer ul li a:visited:ho
   }
 }
 
+.fancybox__container {
+  --fancybox-bg: rgb(34 34 34 / 95%);
+}
+
 /* =============
     Video
 ============= */
