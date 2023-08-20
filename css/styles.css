@@ -13,6 +13,17 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --text-color: #4c5c68;
+  --bkg-color: #fff;
+  --search-btn-color: #007ea7;
+  --toggle-btn-color: #ff5e5b;
+}
+
+[data-dark-mode] {
+  --text-color: #fff;
+  --bkg-color: #003459;
+  --search-btn-color: #a6e1fa;
+  --toggle-btn-color: #e76f51;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -331,9 +342,67 @@ template {
 /* =============
     Base
 ============= */
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+.container-grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: ". grid-content .";
+  -ms-grid-columns: 15px auto 15px;
+  grid-template-columns: 15px auto 15px;
+}
+@media (min-width: 1200px) {
+  .container-grid {
+    -ms-grid-columns: auto 1200px auto;
+    grid-template-columns: auto 1200px auto;
+  }
+}
+.container-grid > div {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: grid-content;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bkg-color);
+}
+body button {
+  background-color: var(--button-color);
+}
+
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.section-title {
+  font-weight: 300;
+}
+
 /* =============
     Buttons
 ============= */
@@ -366,3 +435,48 @@ textarea {
 /* =============
     Footer
 ============= */
+/* =============
+    Light - Dark - Mode
+============= */
+#light-dark > div {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+#light-dark > div #content-container #intro h1 {
+  font-size: 3.125rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+#light-dark > div #content-container #intro article h1 {
+  color: var(--text-color);
+}
+#light-dark > div #content-container #search form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#light-dark > div #content-container #search form div input {
+  border: 1px solid var(--search-btn-color);
+  padding: 20px 10px;
+  width: 100%;
+}
+#light-dark > div #content-container #search form div button {
+  background-color: var(--search-btn-color);
+  border: none;
+  color: var(--white);
+  font-weight: 600;
+  padding: 10px 20px;
+}
+#light-dark > div #content-container #toggle {
+  margin-top: 50px;
+}
+#light-dark > div #content-container #toggle button {
+  background-color: var(--toggle-btn-color);
+  border: none;
+  color: var(--white);
+  font-weight: 600;
+  padding: 20px;
+}

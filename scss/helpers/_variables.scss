@@ -15,10 +15,24 @@ $screen-lg-min: 1024px;
 // Large desktops
 $screen-xl-min: 1200px;
 
+// Large desktops
+$screen-xxl-min: 1440px;
+
 
 // Colors vars
 :root {
   --black: #000000;
   --white: #ffffff;
+
+  --text-color: #4c5c68;
+  --bkg-color: #fff;
+  --search-btn-color: #007ea7;
+  --toggle-btn-color: #ff5e5b;
 }
 
+[data-dark-mode] {
+  --text-color: #fff;
+  --bkg-color: #003459;
+  --search-btn-color: #a6e1fa;
+  --toggle-btn-color: #e76f51;
+}

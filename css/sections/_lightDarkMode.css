@@ -1,0 +1,45 @@
+/* =============
+    Light - Dark - Mode
+============= */
+#light-dark > div {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+#light-dark > div #content-container #intro h1 {
+  font-size: rem-calc(50);
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+#light-dark > div #content-container #intro article h1 {
+  color: var(--text-color);
+}
+#light-dark > div #content-container #search form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#light-dark > div #content-container #search form div input {
+  border: 1px solid var(--search-btn-color);
+  padding: 20px 10px;
+  width: 100%;
+}
+#light-dark > div #content-container #search form div button {
+  background-color: var(--search-btn-color);
+  border: none;
+  color: var(--white);
+  font-weight: 600;
+  padding: 10px 20px;
+}
+#light-dark > div #content-container #toggle {
+  margin-top: 50px;
+}
+#light-dark > div #content-container #toggle button {
+  background-color: var(--toggle-btn-color);
+  border: none;
+  color: var(--white);
+  font-weight: 600;
+  padding: 20px;
+}
