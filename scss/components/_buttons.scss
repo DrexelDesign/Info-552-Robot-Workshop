@@ -9,6 +9,17 @@ button {
 	margin: 0px;
 }
 
+.btn-toggle{
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  color: var(--charcoal);
+  background-color: var(--yellow);
+}
+
 
 #burger-btn {
     width: 40px;

@@ -4,7 +4,6 @@
 
 #skills{
     
-    
     background-color: var(--charcoal);
     color: var(--white);
 
@@ -52,11 +51,13 @@
                 h1{
                     font-family: 'Comfortaa', cursive;
                     font-size: rem-calc(21);
+                    color: var(--white);
                 }
 
                 p{
                     line-height: rem-calc(22);
                     text-align: justify;
+                    color: var(--white);
 
                     @include md{
                         font-size: rem-calc(18);
@@ -76,10 +77,12 @@
                             h3{
                                 font-weight: 400;
                                 font-size: rem-calc(18);
+                                color: var(--white);
                             }
                             h4{
                                 font-size: rem-calc(18);
                                 margin-left: auto;
+                                color: var(--white);
                             }
                         }
 

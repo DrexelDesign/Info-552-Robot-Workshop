@@ -17,18 +17,18 @@
     scroll-margin-top: 150px;
 
     background-image: url("../img/hero/hero.jpg");
-    margin-top: 50px;
+    // margin-top: 50px;
 
     @include md{
-        margin-top: 50px;
+        // margin-top: 50px;
     }
 
     @include lg{
-        margin-top: 150px;
+        // margin-top: 150px;
     }
 
     @include xl{
-        margin-top: 160px;
+        // margin-top: 160px;
     }
 }
 

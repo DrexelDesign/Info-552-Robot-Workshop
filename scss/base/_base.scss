@@ -3,6 +3,7 @@
 ============= */
 html{
     scroll-behavior: smooth;
+    background-color: var(--white);
 }
 
 ul{
@@ -11,6 +12,14 @@ ul{
     li{
         list-style: none;
     }
+}
+
+.hide-sun{
+    display: none;
+}
+
+.hide-moon{
+    display: none;
 }
 
 .content-spacing{

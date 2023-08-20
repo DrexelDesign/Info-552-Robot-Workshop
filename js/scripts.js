@@ -9,6 +9,25 @@ Fancybox.bind('[data-fancybox]', {
 // AOS
 AOS.init();
 
+
+// Dark Mode
+// Select the button
+const toggleButton = document.querySelector(".btn-toggle");
+
+let sunIcon = document.querySelector(".fa-sun");
+let moonIcon = document.querySelector(".fa-moon");
+
+// Listen for a click on the button
+toggleButton.addEventListener("click", function () {
+  document.querySelector('html').toggleAttribute('data-dark-mode')
+
+  
+  //toggle the sun and moon icon
+  sunIcon.classList.toggle('hide-sun')
+  moonIcon.classList.toggle('hide-moon')
+});
+
+
 let burgerBtn = document.querySelector("#burger-btn");
 let navContainer = document.querySelector("#nav-container");
 
