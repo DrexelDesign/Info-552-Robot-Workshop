@@ -17,6 +17,9 @@
 		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 
+		<!-- AOS -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 		<link rel="stylesheet" href="css/styles.css" />
 		<title>Robot Workshop</title>
 	</head>
@@ -64,14 +67,14 @@
 
 		<section id="history" class="content-spacing">
 			<div>
-				<div id="history-hero"></div>
-				<section id="history-title">
+				<div id="history-hero" data-aos="fade-right"></div>
+				<section id="history-title" data-aos="fade-left">
 					<h1>Early History of</h1>
 					<h1>Machine Learning</h1>
 					<p>by Professor Karen Pine</p>
 				</section>
 
-				<article id="history-content">
+				<article id="history-content" data-aos="fade-right">
 					<p>
 						The first case of neural networks was in 1943, when
 						neurophysiologist Warren McCulloch and mathematician
@@ -166,7 +169,7 @@
 			</div>
 		</section>
 
-		<section id="hero-2" class="heroes content-spacing"></section>
+		<section id="hero-2" class="heroes content-spacing" data-aos="flip-up" data-aos-offset="300"></section>
 
 		<section id="gallery" class="content-spacing">
 			<div>
@@ -197,6 +200,8 @@
 			</ul>
 		</footer>
 
+		<!-- AOS -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script src="js/scripts-dist.js"></script>
 	</body>
 </html>

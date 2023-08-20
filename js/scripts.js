@@ -6,6 +6,9 @@ Fancybox.bind('[data-fancybox]', {
 	}
 });
 
+// AOS
+AOS.init();
+
 let burgerBtn = document.querySelector("#burger-btn");
 let navContainer = document.querySelector("#nav-container");
 
