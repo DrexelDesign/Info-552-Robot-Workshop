@@ -12,13 +12,14 @@ AOS.init();
 
 // Dark Mode
 // Select the button
-const toggleButton = document.querySelector(".btn-toggle");
+let toggleButton = document.querySelector(".btn-toggle");
 
 let sunIcon = document.querySelector(".fa-sun");
 let moonIcon = document.querySelector(".fa-moon");
 
 // Listen for a click on the button
 toggleButton.addEventListener("click", function () {
+	// adds the data-dark-mode attribute to the html tag
   document.querySelector('html').toggleAttribute('data-dark-mode')
 
   

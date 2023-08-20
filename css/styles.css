@@ -22,6 +22,17 @@ html {
   --charcoal: #ffffff;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --black: #000000;
+    --white: #222222;
+    --charcoal: #ffffff;
+    --yellow: #F8C832;
+  }
+  .btn-toggle {
+    display: none;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -427,9 +438,10 @@ button {
   border-radius: 100%;
   position: fixed;
   bottom: 24px;
-  right: 24px;
+  right: 16px;
   color: var(--charcoal);
   background-color: var(--yellow);
+  z-index: 1000;
 }
 
 #burger-btn {
@@ -448,7 +460,7 @@ button {
   position: absolute;
   height: 3px;
   width: 100%;
-  background: var(--black);
+  background: var(--charcoal);
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -595,7 +607,7 @@ header {
     position: static;
     padding: 24px 0 8px;
     position: sticky;
-    top: -80px;
+    top: -100px;
   }
 }
 @media (min-width: 1024px) {

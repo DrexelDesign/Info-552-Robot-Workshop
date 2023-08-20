@@ -34,3 +34,16 @@ $screen-xxl-min: 1440px;
   --white: #222222;
   --charcoal: #ffffff;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --black: #000000;
+    --white: #222222;
+    --charcoal: #ffffff;
+    --yellow: #F8C832;
+  }
+
+  .btn-toggle {
+    display: none;
+  }
+}
