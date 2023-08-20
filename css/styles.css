@@ -1069,6 +1069,8 @@ footer ul li a:link:hover, footer ul li a:link:active, footer ul li a:visited:ho
   height: 100%;
   width: 100%;
   display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 @media (min-width: 768px) {
   #gallery > div ul li {
@@ -1180,7 +1182,7 @@ footer ul li a:link:hover, footer ul li a:link:active, footer ul li a:visited:ho
 }
 
 .fancybox__container {
-  --fancybox-bg: rgb(34 34 34 / 95%);
+  --fancybox-bg: rgb(34 34 34 / 98%);
 }
 
 /* =============
